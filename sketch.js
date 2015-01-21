@@ -24,8 +24,8 @@ function draw() {
         fill(dpsAgentData[i][2], dpsAgentData[i][3], dpsAgentData[i][4], dpsAgentData[i][5]);
         ellipse(dpsAgentData[i][0], dpsAgentData[i][1], 15, 15);
        
-        dpsAgentData[i][0] += random(-0.5, 2);
-        dpsAgentData[i][1] += random(-0.5, 2);
+        dpsAgentData[i][0] += random(-0.25, 1);
+        dpsAgentData[i][1] += random(-0.25, 1);
         dpsAgentData[i][0] %= windowWidth;
         dpsAgentData[i][1] %= windowHeight;
     }
