@@ -43,7 +43,7 @@ function seedAgents() {
         dpsAgentData[dpsAgentData.length] = [   random(windowWidth),        // x 
                                                 random(windowHeight),       // y
                                                 random(0.6,0.7),            // h
-                                                1.0,                        // s
+                                                0.0,                        // s
                                                 (r > 0.22) ? 1.0 : 0.0,      // v
                                                 (r > 0.22) ? 0.04 : 0.3];    // a
     }
