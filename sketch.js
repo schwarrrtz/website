@@ -37,14 +37,14 @@ function windowResized() {
 }
 
 function seedAgents() {
-
+    
     for(var i=0; i<numAgents; i++) {
         var r = random();
-        dpsAgentData[dpsAgentData.length] = [   random(windowWidth),        // x 
-                                                random(windowHeight),       // y
-                                                random(0.6,0.7),            // h
-                                                0.0,                        // s
-                                                (r > 0.22) ? 1.0 : 0.0,      // v
-                                                (r > 0.22) ? 0.04 : 0.3];    // a
+        dpsAgentData[i] = [  random(windowWidth),        // x 
+                             random(windowHeight),       // y
+                             random(0.6,0.7),            // h
+                             0.5,                        // s
+                             (r > 0.22) ? 1.0 : 0.0,      // v
+                             (r > 0.22) ? 0.04 : 0.3];    // a
     }
 }
